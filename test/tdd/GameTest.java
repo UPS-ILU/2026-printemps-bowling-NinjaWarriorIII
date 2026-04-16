@@ -26,4 +26,12 @@ public class GameTest {
 		}
 		assertEquals(0, game.score());
 	}
+	
+	@Test
+	void test_1quille() {
+		for(int i = 0; i < 20; i++) {
+			game.roll(1);
+		}
+		assertEquals(20, game.score());
+	}
 }
